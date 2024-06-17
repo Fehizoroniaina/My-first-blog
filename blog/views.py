@@ -10,6 +10,7 @@ def upload_image(request) :
         form = Post()
     return render(request, 'upload_image.html', {'form' : form})
     
-    
+def post_list(request):
+    return render(request, 'blog/post_list.html',{}) 
 
 # Create your views here.
